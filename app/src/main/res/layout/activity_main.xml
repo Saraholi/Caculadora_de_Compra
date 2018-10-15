@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senaijandira.atividade_recuperacao.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:text="Recuperação"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF4081"
+        android:textSize="35px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="590px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="250px"
+        android:layout_marginTop="-30px"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/arroz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arroz  - R$ 9.00 - " />
+
+
+        <CheckBox
+            android:id="@+id/leite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leite Longa Vida - R$ 2.50  - " />
+
+
+        <CheckBox
+            android:id="@+id/contrafile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contra Filé - R$ 27.70  - " />
+
+
+        <CheckBox
+            android:id="@+id/coca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coca Cola - R$ 8.65  - " />
+
+
+        <CheckBox
+            android:id="@+id/feijao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feijão Carioquinha - R$ 7.50 - " />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_marginTop="-630px"
+        android:onClick="calcular"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="-115dp"
+        android:text="Resultado:"
+
+
+        />
+
+</LinearLayout>
+
